@@ -30,41 +30,27 @@
     transform: rotate(20deg);
     animation-duration: initial;
 }
-.div2 
-{
-    border: 20px rgb(202, 202, 202) solid;
-    width: 200px;
-    border-radius: 999px;
-    animation-duration: div2;
+.div2 {
+        margin: 10px;
+    border: 16px solid black; 
+    border-radius: 50%;
+    border-top: 16px solid #0768f2;
+    width: 120px;
+    height: 120px;
+    animation-name: div2;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
 }
-@keyframes div2
-{
-    0%
-    {
-        transform: rotate(30deg);
+
+ @keyframes div2 {
+    0%{ 
+        transform: rotate(0deg); 
     }
-    50%
-    {
-        transform: 60deg;
-    }
-    100%
-    {
-        transform: 360deg;
-    }
-}
-img
-{
-    width: 150px;
-    height: 150px;
-}
-@keyframes image
-{
-    50%
-    {
-        rotate: 60px;
-    }
-    100%
-    {
-        rotate: 360px;
+    100%{
+        transform: rotate(360deg); 
+    } 
+    50%{ 
+        transform: rotate(180deg); 
     }
 }
